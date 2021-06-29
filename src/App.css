@@ -41,4 +41,8 @@ h1 {
   text-align: center;
   font-size: XX-large;
 }
-
+img {
+  display:block;
+  margin : 0 auto;
+  width: 25%;
+}
