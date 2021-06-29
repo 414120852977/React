@@ -55,3 +55,39 @@ img {
 .input {
   align-items:center;
 }
+
+html {
+    font-size :14px;
+    font-family: 'Open sans', sans-serif;
+}
+html {
+    background-color: #00539F;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 60px 40px 50px;
+    border: 5px solid black;
+}
+h1 {
+    font-size: 60px;
+    text-align:center;
+}
+h1 {
+    margin: 0;
+    padding:20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+img {
+    display: black;
+    margin: 0 auto;
+    text-align: center;
+     width: 200px;
+}
+p, li {
+    font-size:16px;
+    line-height:2;
+    letter-spacing: 1px;
+}

@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      username:"ashok",
+      username:"",
       nameError:""
     }
   }
@@ -32,7 +32,7 @@ class App extends React.Component {
   return (
     <div>
       <div>
-      <h1>{this.state.username} from Bridgelabz</h1>
+      <h1>Hello {this.state.username} from Bridgelabz</h1>
       <img src = {logo} onClick = {this.onClick}
       alt="The Bridgelabz Logo a bridgelabz through employement through lab works"/>
       </div>
@@ -41,8 +41,20 @@ class App extends React.Component {
         <input onChange = {this.onNameChange}/>
         <span className = "error-output">{this.state.nameError}</span>
       </div>
-     </div>
-  
+      <p>At Bridgelabz, we're a community of</p>
+      <ul>
+      <li>technologiest</li>
+      <li>thinkers</li>
+      <li>builders</li>
+      </ul>
+      <p> Working together to keep the tech employability of engineers alive 
+and accessible, so tech companies wordwide can get contributions
+and creators for technology solutions. we belive this act 
+of human collaborations across an employability olatform is essential to indivisual 
+growth and our collective future</p>
+  <p>To Know about us, visit <a href = "bridgelabz.com">Bridgelabz</a> to learn more about our mission i.e. <b>Employability to all</b></p>
+    </div>
+   
   );
   }
 }
