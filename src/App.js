@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      username:"Ashok"
+      username:"ashok",
+      nameError:""
     }
   }
   // onclick function
@@ -17,16 +18,30 @@ class App extends React.Component {
   }
   onNameChange = (event) => {
     console.log("value is:",event.target.value);
+    const nameRegex = RegExp('^[A-Z]{1}[A-Za-z\\s{2,}$]');
     this.setState({username:event.target.value})
+    if (nameRegex.test(event.target.value)) {
+      this.setState({nameError:''});
+    }
+    else {
+      this.setState({nameError:'name is incorrect'})
+    }
   }
 
   render() {
   return (
+    <div>
       <div>
       <h1>{this.state.username} from Bridgelabz</h1>
       <img src = {logo} onClick = {this.onClick}
       alt="The Bridgelabz Logo a bridgelabz through employement through lab works"/>
       </div>
+      
+      <div>
+        <input onChange = {this.onNameChange}/>
+        <span className = "error-output">{this.state.nameError}</span>
+      </div>
+     </div>
   
   );
   }
